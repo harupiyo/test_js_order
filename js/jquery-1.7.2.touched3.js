@@ -1,4 +1,4 @@
-console.log('run jquery');
+console.log('run jquery3');
 /*!
  * jQuery JavaScript Library v1.7.2
  * http://jquery.com/

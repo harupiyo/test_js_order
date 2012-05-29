@@ -6,13 +6,21 @@
 <script type="text/javascript">
 	console.log('head 1');
 </script>
-<script type="text/javascript" src="./js/jquery-1.7.2.touched.js"></script>
-<script type="text/javascript" src="./js/dummy.js"></script>
+<script type="text/javascript" defer src="js/defer.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.touched1.js"></script>
+<script type="text/javascript" src="js/normal.js"></script>
+<script type="text/javascript" async src="./js/jquery-1.7.2.touched2.js"></script>
 <script type="text/javascript">
 	console.log('head 2');
+	$(function(){
+		var s = document.createElement('script');
+		s.src = './js/jquery-1.7.2.touched3.js';
+		$('#test').append(s);
+	});
 </script>
 </head>
 <body>
+<div id="test"></div>
 <script type="text/javascript">
 	console.log('body 1');
 </script>
