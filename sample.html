@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Javascript の実行順の検証</title>
+<script type="text/javascript">
+	console.log('head 1');
+</script>
+<script type="text/javascript" src="./js/jquery-1.7.2.touched.js"></script>
+<script type="text/javascript" src="./js/dummy.js"></script>
+<script type="text/javascript">
+	console.log('head 2');
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	console.log('body 1');
+</script>
+</body>
+</html>
